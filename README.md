@@ -1,91 +1,16 @@
-Slides Template Project
-=======================
+L'Ordinateur Quantique, Mythe ou Réalité ?
+==========================================
 
 Michel Casabianca
 
 casa@sweetohm.net
 
 ---
-Slides Template Project
------------------------
+Proposition BDXIO 2017
+----------------------
 
-This is a template project to generate slides using [Remark JS](http://remarkjs.com). Download the archive of the project [on the download page](https://github.com/c4s4/slides/releases), unzip it and customize following properties of the makefile:
+On entend parfois parler d'ordinateur quantique. Mais qui en a déjà vu un ?
 
-- *TITLE* which if the title of the slides.
-- *DESTINATION* which is the slides destination, used by *rsync* to publish the slides.
+Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication quantiques), je présenterai le Qbit ainsi que les principaux algorithmes quantiques (Grover pour la recherche et Shor pour la décomposition de nombres premiers). Je finirai sur les implémentations actuelles, les difficultés de mise ne œuvre, les perspectives et les enjeux de ces ordinateur d'un nouveau type.
 
-You can then edit the content of the slides in the *readme.md* file in [Markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-The makefile provides following targets:
-
-- *slides* to generate slides in *build* directory.
-- *clean* to delete files generated in *build* directory.
-- *publish* to publish slides using *rsync*.
-
-You can open generated slides in your favorite browser in *build* directory. You can view these slides in your browser [at this location](http://sweetohm.net/slides/slides).
-
----
-Sample slides
-=============
-
-Pages of the slides are separated with three dashes, such as `---`. First page with title should start with first level header:
-
-```md
-Title of my slides
-==================
-
-subtitle
-
-my email address
-
----
-Second page title
------------------
-
-Content ...
-```
-
-Content is written with standard [Markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
----
-Pictures
---------
-
-To print a picture, put it in the *img* directory and integrate with following syntax:
-
-```md
-![The Author](img/casa.png)
-```
-
-Which will render as:
-
-![The Author](img/casa.png)
-
----
-Tables
-------
-
-You can render a table with following syntax:
-
-```md
-First column | Second column | Third column    | Fourth column
-:----------- | :-----------: | --------------: | -------------
-left aligned | centered      | right aligned   | default
-second line  | second line   | second line     | second line
-```
-
-This will be rendered as:
-
-First column | Second column | Third column    | Fourth column
-:----------- | :-----------: | --------------: | -------------
-left aligned | centered      | right aligned   | default
-second line  | second line   | second line     | second line
-
----
-Tips
-====
-
-- Your slides will display on the github page of the project (with horizontal separator between pages).
-- To generate PDF, you can display the slides on Chrome and then print them as PDF.
-- As all resources are embbeded in *res* directory, you don't need an internet connection to display your slides locally.
 
