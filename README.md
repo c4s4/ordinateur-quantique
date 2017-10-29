@@ -52,30 +52,50 @@ Pourquoi l'ordinateur Quantique ?
 
 Nos ordinateurs classiques nous ont suffi jusqu'à maintenant...
 
-![](img/amour-ordi.jpg)
+![](img/amour-ordi.png)
 
 ---
 ### Loi de Moore
 
 ```bash
-Le nombre de transistors dans les processeurs (donc leur puissance)
-double tous les dix-huit mois.
+Le nombre de transistors dans les microprocesseurs double tous les deux ans.
 ```
 
-Cette loi a été énoncée par XXX Moore en 19
+Cette loi a été énoncée par Gordon E. Moore (un des trois fondateurs d'Intel) en 1975. Elle a été très bien vérifiée pendant très longtemps.
 
-Cette loi est **exponentielle** car à intervalle de temps (tous les *18* mois) on multiplie le nombre de transistors par une constante (*2* en l'occurrence).
+![Loi de Moore](img/loi-moore.png)
 
-Or nous savons tous que les lois exponentielles ne peuvent fonctionner qu'un temps. Jusqu'à ce qu'on atteigne la **limite du système**. Par exemple, en économie, ce qui limite la croissance est (entre autre) la finitude des ressources.
+---
+### Limites Physiques
 
-En ce qui concerne les processeurs, les limites sont physiques :
+Cependant, cette loi est **exponentielle**. Or nous savons tous que les lois exponentielles ne peuvent fonctionner qu'un temps, jusqu'à ce qu'on atteigne la **limite du système**.
 
-- La finesse de la gravure est limitées par la diffraction de la lumière.
-- L'effet tunnel, qui permet à un électron de passer une barrière à priori infranchissable limite aussi la finesse de la gravure.
-- La fréquence est limitée par l'émission de rayonnement aux hautes fréquences.
+En ce qui concerne les processeurs, les limites sont les suivantes :
+
+- La finesse de la gravure, et donc le nombre de transistors par centimètre carré, est limitée par la diffraction de la lumière.
+- L'effet tunnel, qui permet à un électron de passer une barrière à priori infranchissable, limite aussi la finesse des circuits.
+- La fréquence est limitée par l'émission de rayonnement aux hautes fréquences ainsi que l'émission de chaleur par le processeur.
+
+Ces limites physiques conduisent à plafonnement des performances des processeurs, et la fin de la validité de la loi de Moore a été annoncée en **2016**.
 
 ---
 ### Besoins de calcul croissants
+
+Voici des estimations du nombre d'ordinateurs dans les datacenters des plus grandes entreprises du web :
+
+- Google : plus de 1.000.000 (en janvier 2010).
+- Microsoft : 1.000.000 (en janvier 2013).
+- Amazon : 450.000 (en mars 2012).
+- OVH : 140.000 (en mars 2013).
+
+Les besoins en calculs des grandes entreprise est donc énorme et va croissant. La consommation des datacenters représente **2 % de la consommation modiale d'électricité**.
+
+---
+### Evolution des besoins en calcul
+
+A titre d'exemple, voici l'évolution de la puissance des super-caculateurs de Météo France entre 1992 et 2016 (l'échelle est **logarithmique**):
+
+![](img/evolution-meteo-france.png)
 
 ---
 Principe de fonctionnement
