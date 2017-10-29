@@ -144,12 +144,38 @@ Donc si une particule peut avoir deux états : soit *spin up* (représenté par 
 a.|u> + b.|d>
 ```
 
-Où *a* et *b* déterminent la probabilité d'observer la particule dans l'état *|u>* ou *|d>*. Par exemple, si la particule est nécessairement dans l'état *|u>*, alors on aura :
+Où *a* et *b* déterminent la **probabilité** d'observer la particule dans l'état *|u>* ou *|d>*. Par exemple, si la particule est nécessairement dans l'état *|u>*, alors on aura :
 
 ```bash
 a = 1
 b = 0
 ```
+
+---
+### Le coin du mathématicien
+
+Les vecteurs d'état de la physique quantique n'ont rien à voir avec les vecteurs de la géométrie. En effet, les bases de l'espace vectoriel sont des états mutuellement exclusifs : une particule ne peut être simultanément dans l'état *|u>* et *|d>*.
+
+De plus, lorsqu'on écrit un état quantique sous la forme :
+
+```bash
+a.|u> + b.|d>
+```
+
+- Cet état n'indique pas que la particule a un peu de *|u>* et un peu de *|d>*.
+- Les coefficients *a* et *b* sont des nombres **complexes**.
+
+On peut représenter cet état sous forme de vecteurs colonnes :
+
+```bash
+| a |     | 1 |     | 0 |               | 1 |          | 0 |
+|   | = a |   | + b |   |  avec : |u> = |   | et |d> = |   |
+| b |     | 0 |     | 1 |               | 0 |          | 1 |
+```
+
+Dans cet état, la probabilité de l'état *up* est *|a|^2* et la probabilité de l'état *down* est *|b|^2* et *a* et *b* vérifient *|a|^2 + |b|^2 = 1*.
+
+La mathématique de la physique quantique est **l'algèbre linéaire**.
 
 ---
 ### Etrangeté quantique
@@ -164,5 +190,13 @@ Ceci illustre le fait que l'on ne peut se représenter mentalement le monde quan
 
 ---
 ### Intrication quantique
+
+Deux objets quantiques peuvent être **liés** de sorte que si l'on connait l'état de l'un on peut en déduire l'état de l'autre. Ce phénomène s'appelle l'intrication quantique.
+
+Ainsi, à l'issu de la désintégration d'une particule en deux autres, il peut arriver que les spins de ces deux particules soient intriqués. **Si on connait le spin de l'une on peut en déduire celui de l'autre**, et ce quelle que soit la distance qui les sépare.
+
+![](img/intrication-quantique.png)
+
+On peut expliquer ce phénomène par le fait que ces particules intriquées, qui peuvent être en nombre quelconque, forment **un seul système**.
 
 
