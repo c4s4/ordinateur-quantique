@@ -22,10 +22,10 @@ Plan
   - Limites de l'informatique classique
   - Besoins croissant en puissance de calcul
 - Principes de fonctionnement
-  - Représentation de l'information
   - Superposition quantique
   - Intrication quantique
   - Le Qbit
+  - Représentation de l'information
   - Algorithmes quantiques
 - Implémentations d'ordinateurs quantiques
   - Implémentations de Qbits
