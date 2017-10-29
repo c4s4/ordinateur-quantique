@@ -20,8 +20,7 @@ Plan
 - Pourquoi un ordinateur quantique ?
   - La loi de Moore
   - Limites de l'informatique classique
-  - Big data, à quand le big processing ?
-	- Chiffres de l'informatique Google ?
+  - Besoins croissant en puissance de calcul
 - Principes de fonctionnement
   - Représentation de l'information
   - Superposition quantique
@@ -79,7 +78,14 @@ En ce qui concerne les processeurs, les limites sont les suivantes :
 Ces limites physiques conduisent à plafonnement des performances des processeurs, et la fin de la validité de la loi de Moore a été annoncée en **2016**.
 
 ---
-### Besoins de calcul croissants
+### Evolution des besoins en calcul
+
+A titre d'exemple, voici l'évolution de la puissance des super-caculateurs de Météo France entre 1992 et 2016 (l'échelle est **logarithmique**):
+
+![](img/evolution-meteo-france.png)
+
+---
+### Nombre d'ordinateurs croissant
 
 Voici des estimations du nombre d'ordinateurs dans les datacenters des plus grandes entreprises du web :
 
@@ -90,12 +96,26 @@ Voici des estimations du nombre d'ordinateurs dans les datacenters des plus gran
 
 Les besoins en calculs des grandes entreprise est donc énorme et va croissant. La consommation des datacenters représente **2 % de la consommation modiale d'électricité**.
 
+**Les besoins croissants en puissance de calcul ainsi que les limites des technologies actuelles rendent nécessaires des avancées majeures dans la technologie informatique.**
+
 ---
-### Evolution des besoins en calcul
+Ordinateurs Quantiques
+======================
 
-A titre d'exemple, voici l'évolution de la puissance des super-caculateurs de Météo France entre 1992 et 2016 (l'échelle est **logarithmique**):
+L'idée d'ordinateur quantique vient à Richard Feynman dans les années 80 :
 
-![](img/evolution-meteo-france.png)
+```bash
+Au lieu de nous plaindre que la simulation des phénomènes quantiques demande
+des puissances énormes à nos ordinateurs actuels, utilisons la puissance de
+calcul des phénomènes quantiques pour dépasser nos ordinateurs actuels.
+```
+
+L'idée est restée assez vague, jusqu'à ce que :
+
+- En 1994, **Peter Shor**, chercheur chez AT&T, démontre qu'il est possible de factoriser de grands nombres en un temps raisonnable à l'aide d'un calculateur quantique.
+- En 1996, **Lov Grover** invente un algorithme quantique qui permet de trouver une entrée dans une base de données non triée en *O(sqrt(N))*.
+
+L'intérêt pratique de ces deux algorithmes, pour la **cryptographie** et la **recherche de données**, a poussé à l'implémentations concrète d'ordinateurs quantiques. Et il se truve que les gens qui s'intéressent à ces domaines, comme la **NSA** ou **Google**, ont des moyens.
 
 ---
 Principe de fonctionnement
@@ -103,9 +123,46 @@ Principe de fonctionnement
 
 L'ordinateur *quantique* traite, comme son homologue *classique*, de l'information. La différence majeure entre ces deux types est la manière de représenter cette information.
 
-Alors que l'ordinateur classique manipule des *bits*, l'ordinateur quantique manipule des bits quantiques ou *Qbits*.
+L'ordinateur classique représente l'information sous forme de **bits** (pour *binary digit*) qui peuvent avoir pour valeurs **0** ou **1**.
 
+L'ordinateur quantique représente l'information à l'aide de **qubits** (pour *quantum binary digit*) qui a un état qui est une superposition de deux états, que l'on peut noter **0** et **1** :
 
+```bash
+a.|0> + b.|1>
+```
 
-Dans un ordinateur classique, l'information 
+Cela est possible du fait du principe de superposition quantique.
+
+---
+### Superposition quantique
+
+Une particule, qui est infiniment petite et donc régie par les lois de la physique quantique, peut se trouver dans un **état indéterminé** tant qu'on n'a pas mesuré son état.
+
+Donc si une particule peut avoir deux états : soit *spin up* (représenté par *|u>*) soit *spin down* (représenté par *|d>*) alors, on peut représenter son état par :
+
+```bash
+a.|u> + b.|d>
+```
+
+Où *a* et *b* déterminent la probabilité d'observer la particule dans l'état *|u>* ou *|d>*. Par exemple, si la particule est nécessairement dans l'état *|u>*, alors on aura :
+
+```bash
+a = 1
+b = 0
+```
+
+---
+### Etrangeté quantique
+
+On peut se dire que c'est pareil pour un système classique à deux états (comme une pièce de monnaie qui peut être *pile* ou *face*), mais il n'en est rien. En effet, même si on ne regarde pas la pièce de monnaie, on sait qu'elle est soit *pile* soit *face*.
+
+Dans le cas de la particule quantique, c'est différent : avant la mesure, son état est une superposition des deux états.
+
+On peut faire le parallèle avec un billet de loterie : **tant que le tirage n'a pas eu lieu, le billet est à la fois perdant ET gagnant**. Et ce n'est pas parce qu'on ne voit pas le billet.
+
+Ceci illustre le fait que l'on ne peut se représenter mentalement le monde quantique. Alors que nous pouvons prévoir le comportement de systèmes classiques simples (comme une pomme qu'on lâche), **seules les mathématiques permettent de prévoir le comportement d'un système quantique**.
+
+---
+### Intrication quantique
+
 
