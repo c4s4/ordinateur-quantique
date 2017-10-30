@@ -121,17 +121,13 @@ L'intérêt pratique de ces deux algorithmes, pour la **cryptographie** et la **
 Principe de fonctionnement
 --------------------------
 
-L'ordinateur *quantique* traite, comme son homologue *classique*, de l'information. La différence majeure entre ces deux types est la manière de représenter cette information.
+Avant d'étudier le fonctionnement d'un ordinateur quantique, il nous faut *essayer* de comprendre deux principes de la physique quantique : **la superposition** et **l'intrication**.
 
-L'ordinateur classique représente l'information sous forme de **bits** (pour *binary digit*) qui peuvent avoir pour valeurs **0** ou **1**.
+**Avertissement**
 
-L'ordinateur quantique représente l'information à l'aide de **qubits** (pour *quantum binary digit*) qui a un état qui est une superposition de deux états, que l'on peut noter **0** et **1** :
+Les notions que nous allons voir maintenant ne sont **pas intuitives** car le monde à notre échelle est régi par les lois de la physique classique. Les lois de l'évolution des espèces a fait en sorte que nous soyons adaptés à cet univers **classique**.
 
-```bash
-a.|0> + b.|1>
-```
-
-Cela est possible du fait du principe de superposition quantique.
+Par conséquent, les images que nous utiliserons sont nécessairement limitées et **seules les mathématiques** nous permettent de modéliser correctement les lois de la physique quantique. Notre intuition ne peut plus rien faire pour nous dans le monde quantique.
 
 ---
 ### Superposition quantique
@@ -186,8 +182,6 @@ Dans le cas de la particule quantique, c'est différent : avant la mesure, son �
 
 On peut faire le parallèle avec un billet de loterie : **tant que le tirage n'a pas eu lieu, le billet est à la fois perdant ET gagnant**. Et ce n'est pas parce qu'on ne voit pas le billet.
 
-Ceci illustre le fait que l'on ne peut se représenter mentalement le monde quantique. Alors que nous pouvons prévoir le comportement de systèmes classiques simples (comme une pomme qu'on lâche), **seules les mathématiques permettent de prévoir le comportement d'un système quantique**.
-
 ---
 ### Intrication quantique
 
@@ -199,4 +193,69 @@ Ainsi, à l'issu de la désintégration d'une particule en deux autres, il peut 
 
 On peut expliquer ce phénomène par le fait que ces particules intriquées, qui peuvent être en nombre quelconque, forment **un seul système**.
 
+---
+### Les qubits
+
+L'ordinateur *quantique* traite, comme son homologue *classique*, de l'information. La différence majeure entre ces deux types est la manière de représenter cette information.
+
+L'ordinateur classique représente l'information sous forme de **bits** (pour *binary digit*) qui peuvent avoir pour valeurs **0** ou **1**.
+
+L'ordinateur quantique représente l'information à l'aide de **qubits** (pour *quantum binary digit*) qui a un état qui est une superposition de deux états, que l'on peut noter **0** et **1** :
+
+```bash
+a.|0> + b.|1>
+```
+
+Cela est possible du fait du principe de superposition quantique.
+
+---
+### Intérêt des qubits
+
+L'intérêt de manipuler des qubits au lieu de bits est le suivant :
+
+```bash
+Les bits ne pouvant prendre qu'un état à la fois, il est souvent nécessaire
+d'itérer sur de nombreuses valeurs pour réaliser un calcul. Au contraire, les
+calculs réalisés avec des qubits opèrent sur toutes les valeurs en même temps.
+```
+
+Par exemple, pour **décomposer en facteurs premiers**, il nous faudra essayer de diviser par tous les nombres premiers inférieurs à la racine carrée. Un algorithme quantique ne procédera pas par essais successifs, mais travaillera avec des qubits qui prendront toutes les valeurs possibles.
+
+Un nombre de **N bits** pouvant prendre *2^N* valeurs, il faudra faire **2^N itérations** pour balayer toutes les valeurs possibles avec des bits classiques, alors que toutes ces valeurs peuvent être représentées à la fois par *N* qubits.
+
+```bash
+On peut donc attendre une accéleration quantique de 2^N avec un ordinateur
+quantique à N qubits.
+```
+
+Pour **N = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.624**, soit environ 1 million de millards...
+
+---
+### Algorithmes quantiques
+
+Les algorithmes quantiques sont composés de portes logiques appliquées aux qbits pour réaliser des opérations sur ceux-ci.
+
+- En entrée, des qbits sont préparés dans des états donnés.
+- En sortie, on lit des bits. Ce ne sont plus des qubits car mesure du résultat fixe leur valeur et il n'y a plus de superposition d'états.
+
+![](img/algo-quantique.png)
+
+L'état d'un qubit étant probabiliste, le résultat d'un calcul quantique l'est aussi. On répète donc souvent le calcul pour obtenir une probabilité du résultat proche de *1*.
+
+---
+### Limites de l'ordinateur quantique
+
+**Réduction du paquet d'onde**
+
+Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc les qbits deviennent de simples bits et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
+
+**Théorème de non clonage des qubits**
+
+La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
+
+Par conséquent, il est impossible de copier des qbits.
+
+**Nombre de qubits**
+
+Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'un grand nombre de qubits. Les implémentations actuelles restent limitées.
 
