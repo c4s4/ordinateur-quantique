@@ -26,7 +26,6 @@ Plan
   - Intrication quantique
   - Le qubit
   - Représentation de l'information
-  - Algorithmes quantiques
 - Implémentations d'ordinateurs quantiques
   - Implémentations de qubits
   - Portes quantiques
@@ -34,7 +33,8 @@ Plan
   - Réduction du paquet d'onde
   - Copie impossible des qubits
   - Nombre de qubits
-- Cas d'utilisation des ordinateurs quantiques
+- Algorithmes quantiques
+  - Exemples de mise en œuvre
   - Cryptographie (algorithme de Shor)
   - Recherche d'information (algorithme de Grover)
   - Problèmes d'optimisation (voyageur de commerce)
@@ -231,26 +231,89 @@ quantique à N qubits.
 Pour **N = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.624**, soit environ 1 million de millards...
 
 ---
-### Algorithmes quantiques
+### Implémentations d'ordinateurs quantiques
+
+Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un système macroscopique ayant des propriétés quantiques pendant un temps suffisant.
+
+Les procédés utilisés actuellement sont :
+
+- Les **circuits supraconducteurs avec jonction Josephson** : technologie mise en œuvre par IBM depuis la fin des années 70 permettant d'envisager des circuits ayant une bonne résistance à la décohérence.
+
+- Les **ions piégés** sont constitués de particules chargées piégées par des champs magnétiques dans des espaces clos et y sont contrôlés par laser. Ils permettent de mettre en œuvre le plus grand nombre de qubits.
+
+---
+#### Algorithmes quantiques
 
 Les algorithmes quantiques sont composés de portes logiques appliquées aux qubits pour réaliser des opérations sur ceux-ci.
 
 - En entrée, des qubits sont préparés dans des états donnés.
-- En sortie, on lit des bits. Ce ne sont plus des qubits car mesure du résultat fixe leur valeur et il n'y a plus de superposition d'états.
+- En sortie, on lit des bits. Ce ne sont plus des qubits car la mesure du résultat fixe leur valeur et il n'y a plus de superposition d'états.
 
 ![](img/algo-quantique.png)
+
+En pratique, on représente souvent les algorithmes sous forme d'une *partition* dans laquelle chaque ligne représente un qubit et où les portes sont placées sur ces lignes.
 
 L'état d'un qubit étant probabiliste, le résultat d'un calcul quantique l'est aussi. On répète donc souvent le calcul pour obtenir une probabilité du résultat proche de *1*.
 
 ---
-### Implémentations d'ordinateurs quantiques
+### Exemple d'algorithme quantique
 
-Bien sûr, il ne suffit pas de se dire que l'on pourrait appliquer la physique quantique au calcul, encore faut-il réaliser concrètement des ordinateurs quantiques.
+Pour montrer un exemple de mise en œuvre d'un algorithme quantique, nous pouvons utiliser l'outil qu'IBM met à disposition en ligne à l'adresse :
 
-Pour ce faire, il faut être capable de créer des dispositifs physiques qui ont les propriétés physiques recherchées (superposition et intrication).
+```bash
+http://quantumexperience.ng.bluemix.net
+```
+
+Après inscription, on accède à une page, le *composer*, nous permettant d'éditer notre *partition* :
+
+![](img/ibm-composer.png)
 
 ---
-### Limites de l'ordinateur quantique
+### Le composer
+
+Sur cette page, nous trouvons :
+
+- Les lignes horizontales correspondant aux **5 qubits** dont nous disposons.
+- A droite, nous trouvons les **portes logiques** que nous plaçons par *drag & drop*.
+
+Les **qubits** sont tous initialement à l'état *|0>*. Nous pouvons changer leur état avec la porte **X** qui inverse l'état d'un qubit.
+
+De plus, il faut toujours **effectuer une mesure** à la fin de notre partition pour pouvoir l'exécuter.
+
+Lorsque nous effectuons une mesure, nous obtenons le résultat sous forme d'un **bit classique**. Nous disposons ainsi de 5 qubits et 5 cbits, les bits classiques qui contiennent le résultat de notre calcul.
+
+Lorsque nous avons composé notre partition, nous pouvons l'exécuter sur un **simulateur** ou sur un **processeur quantique**.
+
+---
+### Exemple de partition
+
+Par exemple, si nous voulons laisser le premier qubit à l'état *|0>* et faire passer le second à l'état *|1>*, puis réaliser une mesure de ces qubits, nous composerons :
+
+![](img/partition-1.png)
+
+Après avoir cliqué sur **Simulation**, nous obtenons la page suivante :
+
+---
+### Exemple de résultat
+
+![](img/resultat-1.png)
+
+Ce résultat se présente sous la forme d'un histogramme où :
+
+- **00010** est l'état des 5 qubits.
+- **1.000** est la proportion de ce résultat.
+
+Dans la représentation de l'état après la mesure, le premier qubit est le plus à droite.
+
+Ce résultat est probabiliste comme toute mesure quantique.
+
+---
+### Deuxième exemple
+
+La porte **H** (pour Hadamard) réalise une rotation de **
+
+---
+## Limites de l'ordinateur quantique
 
 **Réduction du paquet d'onde**
 
