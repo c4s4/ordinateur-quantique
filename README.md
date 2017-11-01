@@ -241,6 +241,38 @@ Les procédés utilisés actuellement sont :
 
 - Les **ions piégés** sont constitués de particules chargées piégées par des champs magnétiques dans des espaces clos et y sont contrôlés par laser. Ils permettent de mettre en œuvre le plus grand nombre de qubits.
 
+Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en place (et souvent à de **très basses températures** afin d'éviter les perturbations extérieures).
+
+---
+## Limites de l'ordinateur quantique
+
+**Décohérence**
+
+La décohérence résulte de l'action de l'environnement sur un système qui **perd alors ses propriétés quantiques**. Pour pouvoir réaliser un ordinateur quantique, les qubits doivent avoir une durée de cohérence supérieure au temps de calcul.
+
+**Réduction du paquet d'onde**
+
+Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc les qubits deviennent de simples bits et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
+
+**Théorème de non clonage des qubits**
+
+La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
+
+Par conséquent, il est impossible de copier des qubits.
+
+---
+### Limites (suite)
+
+**Nombre de qubits**
+
+Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'un grand nombre de qubits. Les implémentations actuelles restent limitées.
+
+On estime actuellement qu'un ordinateur quantique sera supérieur à tout ordinateur classique au delà de **50 qubits**.
+
+Cependant, certains problèmes spécifiques requièrent bien plus de qubits. Par exemple, pour factoriser de grands nombres, il faut disposer d'au moins autant de qubits qu'il y a de bits dans le nombre. Donc en pratique plusieurs centaines, voire milliers.
+
+Le faible nombre de qubits est à l'heure actuelle ce qui limite l'intérêt des ordinateurs quantiques disponibles.
+
 ---
 #### Algorithmes quantiques
 
@@ -312,20 +344,4 @@ Ce résultat est probabiliste comme toute mesure quantique.
 
 La porte **H** (pour Hadamard) réalise une rotation de **
 
----
-## Limites de l'ordinateur quantique
-
-**Réduction du paquet d'onde**
-
-Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc les qubits deviennent de simples bits et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
-
-**Théorème de non clonage des qubits**
-
-La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
-
-Par conséquent, il est impossible de copier des qubits.
-
-**Nombre de qubits**
-
-Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'un grand nombre de qubits. Les implémentations actuelles restent limitées.
 
