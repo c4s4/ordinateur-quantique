@@ -11,7 +11,7 @@ Proposition BDXIO 2017
 
 On entend parfois parler d'ordinateur quantique. Mais qui en a déjà vu un ?
 
-Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication quantiques), je présenterai le Qbit ainsi que les principaux algorithmes quantiques (Grover pour la recherche et Shor pour la décomposition de nombres premiers). Je finirai sur les implémentations actuelles, les difficultés de mise ne œuvre, les perspectives et les enjeux de ces ordinateur d'un nouveau type.
+Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication quantiques), je présenterai le qubit ainsi que les principaux algorithmes quantiques (Grover pour la recherche et Shor pour la décomposition de nombres premiers). Je finirai sur les implémentations actuelles, les difficultés de mise ne œuvre, les perspectives et les enjeux de ces ordinateur d'un nouveau type.
 
 ---
 Plan
@@ -24,16 +24,16 @@ Plan
 - Principes de fonctionnement
   - Superposition quantique
   - Intrication quantique
-  - Le Qbit
+  - Le qubit
   - Représentation de l'information
   - Algorithmes quantiques
 - Implémentations d'ordinateurs quantiques
-  - Implémentations de Qbits
+  - Implémentations de qubits
   - Portes quantiques
 - Limites de l'ordinateur quantique
   - Réduction du paquet d'onde
-  - Copie impossible des Qbits
-  - Nombre de Qbits
+  - Copie impossible des qubits
+  - Nombre de qubits
 - Cas d'utilisation des ordinateurs quantiques
   - Cryptographie (algorithme de Shor)
   - Recherche d'information (algorithme de Grover)
@@ -233,9 +233,9 @@ Pour **N = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.
 ---
 ### Algorithmes quantiques
 
-Les algorithmes quantiques sont composés de portes logiques appliquées aux qbits pour réaliser des opérations sur ceux-ci.
+Les algorithmes quantiques sont composés de portes logiques appliquées aux qubits pour réaliser des opérations sur ceux-ci.
 
-- En entrée, des qbits sont préparés dans des états donnés.
+- En entrée, des qubits sont préparés dans des états donnés.
 - En sortie, on lit des bits. Ce ne sont plus des qubits car mesure du résultat fixe leur valeur et il n'y a plus de superposition d'états.
 
 ![](img/algo-quantique.png)
@@ -243,17 +243,24 @@ Les algorithmes quantiques sont composés de portes logiques appliquées aux qbi
 L'état d'un qubit étant probabiliste, le résultat d'un calcul quantique l'est aussi. On répète donc souvent le calcul pour obtenir une probabilité du résultat proche de *1*.
 
 ---
+### Implémentations d'ordinateurs quantiques
+
+Bien sûr, il ne suffit pas de se dire que l'on pourrait appliquer la physique quantique au calcul, encore faut-il réaliser concrètement des ordinateurs quantiques.
+
+Pour ce faire, il faut être capable de créer des dispositifs physiques qui ont les propriétés physiques recherchées (superposition et intrication).
+
+---
 ### Limites de l'ordinateur quantique
 
 **Réduction du paquet d'onde**
 
-Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc les qbits deviennent de simples bits et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
+Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc les qubits deviennent de simples bits et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
 
 **Théorème de non clonage des qubits**
 
 La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
 
-Par conséquent, il est impossible de copier des qbits.
+Par conséquent, il est impossible de copier des qubits.
 
 **Nombre de qubits**
 
