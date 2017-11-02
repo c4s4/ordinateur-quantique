@@ -340,8 +340,35 @@ Dans la représentation de l'état après la mesure, le premier qubit est le plu
 Ce résultat est probabiliste comme toute mesure quantique.
 
 ---
-### Deuxième exemple
+### Opérateur de superposition
 
-La porte **H** (pour Hadamard) réalise une rotation de **
+La porte **H** (pour *Hadamard*) transforme le qubit *|0>* en un état de superposition de *|0>* et de *|1>* à égal probabilité. Ainsi, la partition suivante :
 
+![](img/partition-2.png)
+
+Ce qui donne le résultat suivant :
+
+![](img/resultat-2.png)
+
+Nous mesurons bien (quasiment) autant de *|0>* que de *|1>*.
+
+---
+### Porte quantique multiple
+
+Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est la cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du second qubit si le premier est à *|1>* et ne fait rien sinon.
+
+![](img/partition-3.png)
+
+Ce qui donne **00** (pour les deux premières lignes) et **11** (pour les deux suivantes).
+
+---
+### Intrication
+
+Nous pouvons intriquer deux qubits avec le circuit suivant :
+
+![](img/partition-4.png)
+
+Ce qui donne **00** ou **11** avec la même probabilité (pour les deux premières lignes) et **01** ou **10** avec le même probabilité (pour les deux lignes suivantes).
+
+Dans le premier cas, les deux qubits ont la même valeur, dans le deuxième, ils ont des valeurs inverses. Ils sont donc **intriqués**.
 
