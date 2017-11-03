@@ -28,7 +28,6 @@ Plan
   - Représentation de l'information
 - Implémentations d'ordinateurs quantiques
   - Implémentations de qubits
-  - Portes quantiques
   - Limites de l'ordinateur quantique
 - Algorithmes quantiques
   - Exemples de mise en œuvre
@@ -248,6 +247,15 @@ Voici à quoi ressemble l'ordinateur quantique d'IBM :
 Le processeur quantique IBM à 16 qubits :
 
 ![](img/processeur-ibm.png)
+
+---
+### Mise en œuvre
+
+Au vu de la taille des installations nécessaires et de la complexité de mise en œuvre (installation cryogénique), on comprend que l'ordinateur quantique est confiné dans des **centres de calcul**.
+
+D'autre part, du fait de la taille réduite des données en entrée (quelques qubits), on peut envisager des **accès par le web**.
+
+Par conséquent, on ne peut s'attendre à un **usage grand public** de l'informatique quantique dans un futur proche, du moins sous la forme d'appareils possédés par des particuliers.
 
 ---
 ### Limites de l'ordinateur quantique
