@@ -433,8 +433,56 @@ En juillet 2016, Alibaba, le géant du commerce en ligne Chinois, s'est associé
 
 En juillet 2017, Atos annonce son **Atos Learning Machine**, un ordinateur classique capable de simuler 40 qubits. Il permet aux chercheurs et développeurs de travailler sur des algorithmes quantiques.
 
+---
+Perspectives
+------------
 
+Il existe beaucoup de problèmes dont la **complexité est exponentielle**. Un exemple simple est le placement de convives autour d'une table : pour *3* convives, il y a *3 x 2 x 1 = 3! = 6* possibilités. Pour *10* convives, nous sommes à *3.628.800*, soit plus de *3* millions !
 
+On rencontre ce type de complexité exponentielle dans les problèmes suivants :
 
+- **Optimisation** : on imagine bien que l'optimisation des livraisons d'Amazon dans une ville comme New York est un problème qui est en même temps extrêmement complexe et d'une grande importance.
+- **Chimie** : la modélisation des électrons dans les molécules, qui sont attirés par les noyaux et se repoussent entre eux devient vite très complexe lorsqu'on augmente le nombre de ces électrons.
 
+Ces problèmes sont hors de portée des ordinateurs classiques. Mais avec une accélération d'un rapport de **1 million de millards**, ils sont à portée des ordinateurs quantiques.
 
+---
+### Révolution Quantique
+
+L'accélération que l'on peut attendre de l'ordinateur quantique pour la résolution de ces problèmes est d'une telle ampleur, que **ce n'est plus une évolution mais une révolution**.
+
+On attend ainsi de la mise en œuvre des ordinateurs quantiques des progrès significatifs dans les domaines suivants :
+
+- La création de nouveaux médicaments.
+- La création de nouveaux matériaux.
+- L'optimisation à grande échelle.
+
+On comprend donc que les entreprises les plus innovantes en informatique s'intéressent à l'informatique quantique. Et l'on peut s'attendre à des percées significatives dans les **cinq prochaines années**.
+
+---
+Pour aller plus loin
+--------------------
+
+Pour comprendre en profondeur le fonctionnement des ordinateurs quantiques, il faut commencer par se familiariser avec la physique quantique. Je conseille donc de lire l'ouvrage de *Leonard Susskind* **Le minimum théorique, Mécanique Quantique**.
+
+![](img/minimum-theorique.png)
+
+---
+### The Quantum Experience
+
+On pourra ensuite expérimenter avec l'ordinateur quantique d'IBM sur le site web :
+
+```bash
+http://quantumexperience.ng.bluemix.net
+```
+
+L'inscription est gratuite et ouverte à tout le monde. Le site propose de la documentation en ligne, pour les débutants et les utilisateurs confirmés.
+
+En plus de l'interface graphique du *composer*, on peut aussi utiliser le langage de programmation *Qasm* ou bien une API Python.
+
+---
+Merci pour votre attention
+==========================
+
+Des Questions ?
+---------------
