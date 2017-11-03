@@ -29,10 +29,7 @@ Plan
 - Implémentations d'ordinateurs quantiques
   - Implémentations de qubits
   - Portes quantiques
-- Limites de l'ordinateur quantique
-  - Réduction du paquet d'onde
-  - Copie impossible des qubits
-  - Nombre de qubits
+  - Limites de l'ordinateur quantique
 - Algorithmes quantiques
   - Exemples de mise en œuvre
   - Cryptographie (algorithme de Shor)
@@ -99,8 +96,7 @@ Les besoins en calculs des grandes entreprise est donc énorme et va croissant. 
 **Les besoins croissants en puissance de calcul ainsi que les limites des technologies actuelles rendent nécessaires des avancées majeures dans la technologie informatique.**
 
 ---
-Ordinateurs Quantiques
-======================
+### Ordinateurs Quantiques
 
 L'idée d'ordinateur quantique vient à Richard Feynman dans les années 80 :
 
@@ -231,7 +227,8 @@ quantique à N qubits.
 Pour **N = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.624**, soit environ 1 million de millards...
 
 ---
-### Implémentations d'ordinateurs quantiques
+Implémentations d'ordinateurs quantiques
+----------------------------------------
 
 Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un système macroscopique ayant des propriétés quantiques pendant un temps suffisant.
 
@@ -244,7 +241,7 @@ Les procédés utilisés actuellement sont :
 Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en place (et souvent à de **très basses températures** afin d'éviter les perturbations extérieures).
 
 ---
-## Limites de l'ordinateur quantique
+### Limites de l'ordinateur quantique
 
 **Décohérence**
 
@@ -261,7 +258,7 @@ La copie est une opération classique en informatique. Lors d'une copie on doit 
 Par conséquent, il est impossible de copier des qubits.
 
 ---
-### Limites (suite)
+### Limites de l'ordinateur quantique (suite)
 
 **Nombre de qubits**
 
@@ -274,7 +271,8 @@ Cependant, certains problèmes spécifiques requièrent bien plus de qubits. Par
 Le faible nombre de qubits est à l'heure actuelle ce qui limite l'intérêt des ordinateurs quantiques disponibles.
 
 ---
-#### Algorithmes quantiques
+Algorithmes quantiques
+----------------------
 
 Les algorithmes quantiques sont composés de portes logiques appliquées aux qubits pour réaliser des opérations sur ceux-ci.
 
@@ -288,7 +286,7 @@ En pratique, on représente souvent les algorithmes sous forme d'une *partition*
 L'état d'un qubit étant probabiliste, le résultat d'un calcul quantique l'est aussi. On répète donc souvent le calcul pour obtenir une probabilité du résultat proche de *1*.
 
 ---
-### Exemple d'algorithme quantique
+### IBM Quantum Experience
 
 Pour montrer un exemple de mise en œuvre d'un algorithme quantique, nous pouvons utiliser l'outil qu'IBM met à disposition en ligne à l'adresse :
 
