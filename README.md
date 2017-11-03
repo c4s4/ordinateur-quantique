@@ -32,15 +32,10 @@ Plan
   - Limites de l'ordinateur quantique
 - Algorithmes quantiques
   - Exemples de mise en œuvre
-  - Cryptographie (algorithme de Shor)
-  - Recherche d'information (algorithme de Grover)
-  - Problèmes d'optimisation (voyageur de commerce)
-- Et maintenant ?
+  - Problèmes de prédilection
+- Situation fin 2017
   - Situation actuelle
   - Perspectives
-
----
-On entend souvent parler d'ordinateur quantique. Mais qui en a déjà vu un ?
 
 ---
 Pourquoi l'ordinateur Quantique ?
@@ -239,6 +234,20 @@ Les procédés utilisés actuellement sont :
 - Les **ions piégés** sont constitués de particules chargées piégées par des champs magnétiques dans des espaces clos et y sont contrôlés par laser. Ils permettent de mettre en œuvre le plus grand nombre de qubits.
 
 Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en place (et souvent à de **très basses températures** afin d'éviter les perturbations extérieures).
+
+---
+### L'ordinateur quantique d'IBM
+
+Voici à quoi ressemble l'ordinateur quantique d'IBM :
+
+![](img/ordinateur-ibm.png)
+
+---
+### Le processeur quantique d'IBM
+
+Le processeur quantique IBM à 16 qubits :
+
+![](img/processeur-ibm.png)
 
 ---
 ### Limites de l'ordinateur quantique
