@@ -387,3 +387,58 @@ Ce qui donne **00** ou **11** avec la même probabilité (pour les deux premièr
 
 Dans le premier cas, les deux qubits ont la même valeur, dans le deuxième, ils ont des valeurs inverses. Ils sont donc **intriqués**.
 
+---
+Situation fin 2017
+------------------
+
+### IBM
+
+IBM travaille sur les ordinateurs quantiques depuis plus de 35 ans.
+
+- En mais 2016, IBM a dévoilé un **ordinateur quantique à 5 qubits**, accessible au grand public par internet.
+- En mars 2017, IBM a ouvert une division commerciale, **IBM Q**, pour sévelopper et vendre du calcul quantique par le cloud.
+- En mai 2017, IBM a annoncé deux nouveaux prototypes de processeurs quantiques, à **16 et 17 qubits**.
+
+IBM espère à terme développer un processeur quantique à **50 qubits**, pour atteindre la **suprématie quantique**. Un tel processeur serait plus puissant que tous les ordinateurs classiques développés jusqu'à présent.
+
+---
+### D-Wave Systems
+
+D-Wave est un entreprise Canadienne pionnière en informatique quantique.
+
+- En 2007, elle réalise un premier ordinateur quantique de démonstration à **16 qubits**.
+- En 2011, elle vend un ordinateur quantique à **128 qubits**, le D-Wave One, pour *10 millions* de dollars à *Lockeed Martin*.
+- En 2013, elle vend une machine à **512 qubits**, le D-Wave Two, à un laboratoire d'intelligence artificielle quantique mis en place par la *NASA*, *Google* et des universités Américaines.
+- En 2015, elle passe la barrière du **millier de qubits** avec son ordinateur quantique D-Wave 2X.
+- En 2017, elle vend une machine à **2000 qubits**, le D-Wave 2000Q, à une entreprise de sécurité informatique, *Temple Defense Systems*.
+
+Les machines D-Wave sont cependant critiquées car elles utilisent un procédé appelé **Quantum Annealing** qui est pour certains une impasse pour le calcul quantique. Avec ce procédé, on ne contrôle pas l'état de chaque qubit individuellement, mais on compte sur le fait qu'ils vont adopter un état d'énergie minimale.
+
+Cela ne permet de résoudre que des **problèmes d'optimisation**.
+
+---
+### Google
+
+Google est un client de D-Wave, mais a aussi développé sa propre technologie de calcul quantique. Cette technologie est un **hybride** entre celle d'IBM et celle de D-Wave.
+
+- En juin 2017, Google a testé une machine à **20 qubits** basée sur sa propre technologie.
+- D'ici à la fin 2017, Google espère tester une machine à **49 qubits**, approchant ainsi de la **suprématie quantique**.
+
+Google **investit massivement** dans l'ordinateur quantique. Dans un article de mars 2017 (le même mois où IBM annonçait *IBM Q*) de la revue Nature, des ingénieurs travaillant chez Google ont prédit que *dans quelques années, les ordinateurs quantiques seront plus puissants que tout ordinateur classique pour réaliser certaines tâches*.
+
+---
+### Microsoft, Intel, Alibaba et Atos
+
+Microsoft travaille sur les ordinateurs quantiques avec une initiative appelée **Station Q**, basée essentiellement sur une technologie appelée *topological quantum computing*.
+
+En décembre 2016, Intel a révélé qu'il travaille sur la réalisation de **puces quantiques sur silicium**.
+
+En juillet 2016, Alibaba, le géant du commerce en ligne Chinois, s'est associé avec l'académie des sciences Chinoise pour mettre sur pied un laboratoire de calcul quantique, le **Alibaba Quantum Computing Laboratory**.
+
+En juillet 2017, Atos annonce son **Atos Learning Machine**, un ordinateur classique capable de simuler 40 qubits. Il permet aux chercheurs et développeurs de travailler sur des algorithmes quantiques.
+
+
+
+
+
+
