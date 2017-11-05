@@ -458,7 +458,7 @@ On rencontre ce type de complexité exponentielle dans les types de problèmes s
 Ces problèmes essrntiels sont pourtant hors de portée des ordinateurs classiques.
 
 ---
-### Supématie Quantique
+### Suprématie Quantique
 
 Nous avons vu que l'accélération que l'on peut attendre d'un ordinateur quantique à n qubits est **2ⁿ**. Pour un ordinateur à **50 qubits**, cela donne une accélération d'un facteur d'un **million de milliards** environ.
 
