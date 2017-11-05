@@ -24,14 +24,13 @@ Plan
 - Principes de fonctionnement
   - Superposition quantique
   - Intrication quantique
-  - Le qubit
-  - Représentation de l'information
+  - Les qubits et intérêt pour le calcul
 - Implémentations d'ordinateurs quantiques
-  - Implémentations de qubits
+  - Ordinateur quantique IBM
   - Limites de l'ordinateur quantique
 - Algorithmes quantiques
-  - Exemples de mise en œuvre
-  - Problèmes de prédilection
+  - IBM quantum Experience
+  - Portes quantiques
 - Situation fin 2017
   - Situation actuelle
   - Perspectives
@@ -51,14 +50,14 @@ Nos ordinateurs classiques nous ont suffi jusqu'à maintenant...
 Le nombre de transistors dans les microprocesseurs double tous les deux ans.
 ```
 
-Cette loi a été énoncée par Gordon E. Moore, l'un des trois fondateurs d'Intel, en 1975. Elle a été très bien vérifiée pendant de nombreuses années.
+Cette loi a été énoncée par Gordon E. Moore, l'un des trois fondateurs d'Intel, en 1975. Elle a été **très bien vérifiée** pendant de nombreuses années.
 
 ![Loi de Moore](img/loi-moore.png)
 
 ---
 ### Limites Physiques
 
-Cependant, cette loi est **exponentielle**. Or nous savons tous que les lois exponentielles ne peuvent fonctionner qu'un temps, jusqu'à ce qu'on atteigne la **limite du système**.
+Cependant, cette loi est **exponentielle**. Or nous savons tous que les lois exponentielles ne peuvent fonctionner qu'un temps, jusqu'à ce qu'on atteigne les **limites du système**.
 
 En ce qui concerne les processeurs, les limites sont les suivantes :
 
@@ -85,7 +84,7 @@ Voici des estimations du nombre d'ordinateurs dans les datacenters des plus gran
 - Amazon : **450.000** (en mars 2012).
 - OVH : **140.000** (en mars 2013).
 
-Les besoins en calculs des grandes entreprise est donc énorme et va croissant. La consommation des datacenters représente **2 % de la consommation modiale d'électricité**.
+Les besoins en calculs des grandes entreprise sont donc énormes et vont croissant. La consommation des datacenters représente **2 % de la consommation modiale d'électricité**.
 
 ```bash
 Les besoins croissants en puissance de calcul ainsi que les limites des
@@ -107,7 +106,7 @@ calcul des phénomènes quantiques pour dépasser nos ordinateurs actuels.
 L'idée est restée assez vague, jusqu'à ce que :
 
 - En 1994, **Peter Shor**, chercheur chez AT&T, démontre qu'il est possible de factoriser de grands nombres en un temps raisonnable à l'aide d'un calculateur quantique.
-- En 1996, **Lov Grover** invente un algorithme quantique qui permet de trouver une entrée dans une base de données non triée en *O(sqrt(N))*.
+- En 1996, **Lov Grover** invente un algorithme quantique qui permet de trouver une entrée dans une base de données non triée en *O(√n)*.
 
 L'intérêt pratique de ces deux algorithmes, pour la **cryptographie** et la **recherche de données**, a poussé à l'implémentation concrète d'ordinateurs quantiques. Et il se trouve que les gens qui s'intéressent à ces domaines, comme la **NSA** ou **Google**, ont des moyens.
 
@@ -128,18 +127,16 @@ Par conséquent, les images que nous utiliserons sont nécessairement limitées 
 
 Une particule, qui est infiniment petite et donc régie par les lois de la physique quantique, peut se trouver dans un **état indéterminé** tant qu'on n'a pas mesuré son état.
 
-Donc si une particule peut avoir deux états : soit *spin up* (représenté par *|u>*) soit *spin down* (représenté par *|d>*) alors, on peut représenter son état par :
+Donc si une particule peut avoir **deux états** : soit *spin up* (représenté par *|u>*) soit *spin down* (représenté par *|d>*) alors, on peut représenter son état par :
 
 ```bash
 a.|u> + b.|d>
 ```
 
-Où *a* et *b* déterminent la **probabilité** d'observer la particule dans l'état *|u>* ou *|d>*. Par exemple, si la particule est nécessairement dans l'état *|u>*, alors on aura :
+Où *a* et *b* déterminent la **probabilité** d'observer la particule dans l'état *|u>* ou *|d>*.
 
-```bash
-a = 1
-b = 0
-```
+- Si la particule est nécessairement dans l'état *|u>*, alors on aura *a = 1* et *b = 0*.
+- Si la particule a autant de chances d'être dans chacun des états, alors *a = b = 1/√2*. 
 
 ---
 ### Le coin du mathématicien
@@ -152,8 +149,8 @@ De plus, lorsqu'on écrit un état quantique sous la forme :
 a.|u> + b.|d>
 ```
 
-- Cet état n'indique pas que la particule a un peu de *|u>* et un peu de *|d>*.
 - Les coefficients *a* et *b* sont des nombres **complexes**.
+- Cet état n'indique pas que la particule a un peu de *|u>* et un peu de *|d>*.
 
 Dans cet état, la probabilité de l'état *up* est *|a|²* et la probabilité de l'état *down* est *|b|²* et *a* et *b* vérifient *|a|² + |b|² = 1*.
 
@@ -162,11 +159,11 @@ La mathématique de la physique quantique est **l'algèbre linéaire**, qui nous
 ---
 ### Etrangeté quantique
 
-On peut se dire que c'est pareil pour un système classique à deux états (comme une pièce de monnaie qui peut être *pile* ou *face*), mais il n'en est rien. En effet, même si on ne regarde pas la pièce de monnaie, on sait qu'elle est soit *pile* soit *face*.
+On peut se dire que c'est pareil pour un système classique à deux états (comme une pièce de monnaie qui peut être *pile* ou *face*), mais il n'en est rien. En effet, même si on ne regarde pas la pièce de monnaie, on sait qu'**elle est soit pile soit face**.
 
 Dans le cas de la particule quantique, c'est différent : avant la mesure, son état est une superposition des deux états.
 
-On peut faire le parallèle avec un billet de loterie : **tant que le tirage n'a pas eu lieu, le billet est à la fois perdant ET gagnant**. Et ce n'est pas parce qu'on n'a pas bien observé le billet.
+On peut faire le parallèle avec un billet de loterie : **tant que le tirage n'a pas eu lieu, le billet est à la fois perdant ET gagnant**. Et ce n'est pas parce qu'il nous manque des informations sur ce billet.
 
 ![](img/billet-loterie.png)
 
@@ -184,7 +181,7 @@ On peut expliquer ce phénomène par le fait que ces particules intriquées, qui
 ---
 ### Les qubits
 
-L'ordinateur *quantique* traite, comme son homologue *classique*, de l'information. La différence majeure entre ces deux types d'ordinateur est la manière de représenter cette information.
+L'ordinateur *quantique* traite, comme son homologue *classique*, de l'information. La différence majeure entre ces deux types d'ordinateur est la manière de **représenter cette information**.
 
 L'ordinateur classique représente l'information sous forme de **bits** (pour *binary digit*) qui peuvent avoir pour valeurs **0** ou **1**.
 
@@ -222,7 +219,7 @@ Pour **n = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.
 Implémentations d'ordinateurs quantiques
 ----------------------------------------
 
-Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un système macroscopique ayant des propriétés quantiques pendant un temps suffisamment long.
+Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un **système macroscopique ayant des propriétés quantiques** pendant un temps suffisamment long.
 
 On utilise actuellement, entre autres, les procédés suivants :
 
@@ -230,7 +227,7 @@ On utilise actuellement, entre autres, les procédés suivants :
 
 - Les **ions piégés** sont constitués de particules chargées piégées par des champs magnétiques dans des espaces clos et y sont contrôlés par laser. Ils permettent de mettre en œuvre le plus grand nombre de qubits.
 
-Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en place, et souvent à de **très basses températures** afin d'éviter les perturbations extérieures.
+Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en œuvre, et souvent à de **très basses températures** afin d'éviter les perturbations extérieures.
 
 ---
 ### L'ordinateur quantique d'IBM
@@ -264,26 +261,24 @@ La décohérence résulte de l'action de l'environnement sur un système qui **p
 
 **Réduction du paquet d'onde**
 
-Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc les qubits deviennent de simples bits et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
+Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc **les qubits deviennent de simples bits** et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
 
 **Théorème de non clonage des qubits**
 
 La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
 
-Par conséquent, il est impossible de copier des qubits.
+Par conséquent, il est **impossible de copier des qubits**.
 
 ---
 ### Limites de l'ordinateur quantique (suite)
 
 **Nombre de qubits**
 
-Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'un grand nombre de qubits. Les implémentations actuelles restent limitées.
+Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'**un grand nombre de qubits**.
 
-On estime actuellement qu'un ordinateur quantique sera supérieur à tout ordinateur classique au delà de **50 qubits**.
+Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins autant de qubits qu'il y a de bits** dans ce nombre. Donc en pratique plusieurs centaines, voire milliers.
 
-Cependant, certains problèmes spécifiques requièrent bien plus de qubits. Par exemple, pour factoriser de grands nombres, il faut disposer d'au moins autant de qubits qu'il y a de bits dans ce nombre. Donc en pratique plusieurs centaines, voire milliers.
-
-Le faible nombre de qubits est à l'heure actuelle ce qui limite l'intérêt des ordinateurs quantiques disponibles.
+D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qbits des ordinateurs.
 
 ---
 Algorithmes quantiques
@@ -386,6 +381,17 @@ Ce qui donne **00** ou **11** avec la même probabilité pour le premier circuit
 Dans le premier cas, les deux qubits ont la même valeur, dans le deuxième, ils ont des valeurs inverses. Ils sont donc **intriqués**.
 
 ---
+### Algorithme de Grover
+
+Voici un exemple d'algorithme quantique qui permet de réaliser une recherche avec **√n** itérations.
+
+![](img/grover-algo.png)
+
+La première partie à gauche détermine la valeur à rechercher et la seconde, répétée √n fois, l'amplifie par un procédé appelé **amplification d'amplitude**.
+
+Ce circuit donne toujours le résultat de la recherche **00**.
+
+---
 Situation fin 2017
 ------------------
 
@@ -397,7 +403,7 @@ IBM travaille sur les ordinateurs quantiques depuis plus de 35 ans.
 - En mars 2017, IBM a ouvert une division commerciale, **IBM Q**, pour développer et vendre du calcul quantique par le cloud.
 - En mai 2017, IBM a annoncé deux nouveaux prototypes de processeurs quantiques, à **16 et 17 qubits**.
 
-IBM espère à terme développer un processeur quantique à **50 qubits**, pour atteindre la **suprématie quantique**. Un tel processeur serait plus puissant que tous les ordinateurs classiques développés jusqu'à présent.
+IBM espère à terme développer un processeur quantique à **50 qubits**.
 
 ---
 ### D-Wave Systems
@@ -418,9 +424,14 @@ Les machines D-Wave sont cependant critiquées car elles utilisent un procédé 
 Google est un client de D-Wave, mais a aussi développé sa propre technologie de calcul quantique. Cette technologie est un **hybride** entre celle d'IBM et celle de D-Wave.
 
 - En juin 2017, Google a testé une machine à **20 qubits** basée sur sa propre technologie.
-- D'ici à la fin 2017, Google espère tester une machine à **49 qubits**, approchant ainsi de la **suprématie quantique**.
+- D'ici à la fin 2017, Google espère tester une machine à **49 qubits**.
 
-Google **investit massivement** dans l'ordinateur quantique. Dans un article de mars 2017, soit le même mois où IBM annonçait *IBM Q*, de la revue Nature, des ingénieurs travaillant chez Google ont prédit que *dans quelques années, les ordinateurs quantiques seront plus puissants que tout ordinateur classique pour réaliser certaines tâches*.
+Google **investit massivement** dans l'ordinateur quantique. Dans un article de mars 2017, soit le même mois où IBM annonçait *IBM Q*, des ingénieurs travaillant chez Google ont prédit que :
+
+```bash
+Dans quelques années, les ordinateurs quantiques seront plus puissants
+que tout ordinateur classique pour réaliser certaines tâches.
+```
 
 ---
 ### Microsoft, Intel, Alibaba et Atos
@@ -437,27 +448,34 @@ En juillet 2017, Atos annonce son **Atos Learning Machine**, un ordinateur class
 Perspectives
 ------------
 
-Il existe beaucoup de problèmes dont la **complexité est exponentielle**. Un exemple simple est le placement de convives autour d'une table : pour *3* convives, il y a *3 x 2 x 1 = 3! = 6* possibilités. Pour *10* convives, nous sommes à *3.628.800*, soit plus de *3* millions !
+Il existe beaucoup de problèmes dont la **complexité est exponentielle**. Un exemple simple est le placement de convives autour d'une table : pour *3* convives, il y a *3 x 2 x 1 = 3! = 6* possibilités. Pour *10* convives, nous sommes à *10!*, soit plus de *3* millions !
 
-On rencontre ce type de complexité exponentielle dans les problèmes suivants :
+On rencontre ce type de complexité exponentielle dans les types de problèmes suivants :
 
 - **Optimisation** : on imagine bien que l'optimisation des livraisons d'Amazon dans une ville comme New York est un problème qui est en même temps extrêmement complexe et d'une grande importance.
 - **Chimie** : la modélisation des électrons dans les molécules, qui sont attirés par les noyaux et se repoussent entre eux devient vite très complexe lorsqu'on augmente le nombre de ces électrons.
 
-Ces problèmes sont hors de portée des ordinateurs classiques. Mais avec une accélération d'un rapport de **1 million de millards**, ils sont à portée des ordinateurs quantiques.
+Ces problèmes essrntiels sont pourtant hors de portée des ordinateurs classiques.
 
 ---
-### Révolution Quantique
+### Supématie Quantique
 
-L'accélération que l'on peut attendre de l'ordinateur quantique pour la résolution de ces problèmes est d'une telle ampleur, que **ce n'est plus une évolution mais une révolution**.
+Nous avons vu que l'accélération que l'on peut attendre d'un ordinateur quantique à n qubits est **2ⁿ**. Pour un ordinateur à **50 qubits**, cela donne une accélération d'un facteur d'un **million de milliards** environ.
 
-On attend ainsi de la mise en œuvre des ordinateurs quantiques des progrès significatifs dans les domaines suivants :
+Avec une telle accélération, des problèmes qui étaient impossibles à résoudre (dans des temps raisonnables) sont maintenant à portée. Cette limite de **50 qubits** est appelée **suprématie quantique**, c'est la limite à partir de laquelle un ordinateur quantiques devient plus puissant que tout ordinateur classique.
 
-- La création de nouveaux médicaments.
-- La création de nouveaux matériaux.
-- L'optimisation à grande échelle.
+On comprend donc pourquoi les entreprises qui travaillent dans le domaine de l'informatique quantique se livrent une **course effrénée** pour atteindre cette limite.
 
-On comprend donc que les entreprises les plus innovantes en informatique s'intéressent à l'informatique quantique. Et l'on peut s'attendre à des percées significatives dans les **cinq prochaines années**.
+---
+### Suprématie Quantique (suite)
+
+Au delà de l'aspect marketing de cette course à la **suprématie quantique**, on attend de ces ordinateurs qu'ils puissent permettre des avancées majeures dans les domaines suivants :
+
+- La création de nouveaux médicaments (**repliement des protéines**).
+- La création de nouveaux matériaux (**orbitales moléculaires**).
+- Des optimisations à grande échelle (**voyageur de commerce**).
+
+Les sources s'accordent sur une révolution dans ces domaines dans les **5 années à venir**.
 
 ---
 Pour aller plus loin
@@ -476,9 +494,9 @@ On pourra ensuite expérimenter avec l'ordinateur quantique d'IBM sur le site we
 http://quantumexperience.ng.bluemix.net
 ```
 
-L'inscription est gratuite et ouverte à tout le monde. Le site propose de la documentation en ligne, pour les débutants et les utilisateurs confirmés.
+L'inscription est gratuite et ouverte à tout le monde. Le site propose de la **documentation** en ligne, pour les débutants et les utilisateurs confirmés.
 
-En plus de l'interface graphique du *composer*, on peut aussi utiliser le langage de programmation *Qasm* ou bien une API Python.
+En plus de l'interface graphique du *composer*, on peut aussi utiliser le langage de programmation **Qasm** ou bien une **API Python**.
 
 ---
 Merci pour votre attention

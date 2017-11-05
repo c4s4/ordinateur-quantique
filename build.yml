@@ -3,4 +3,5 @@
 extends: c4s4/build/slides.yml
 
 properties:
-  TITLE: "L'Ordinateur Quantique, Mythe ou Réalité ?"
+  TITLE:   "L'Ordinateur Quantique, Mythe ou Réalité ?"
+  OPTIONS: '{ratio: "4:3"}'
