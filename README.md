@@ -65,7 +65,7 @@ En ce qui concerne les processeurs, les limites sont les suivantes :
 - L'**effet tunnel**, qui permet à un électron de passer une barrière à priori infranchissable, limite aussi la finesse des circuits.
 - La **fréquence** est limitée par l'**émission de rayonnement** aux hautes fréquences ainsi que l'**émission de chaleur** par le processeur.
 
-Ces limites physiques conduisent à plafonnement des performances des processeurs, et la fin de la validité de la loi de Moore a été annoncée en **2016**.
+Ces limites physiques conduisent au plafonnement des performances des processeurs, et la fin de la validité de la loi de Moore a été annoncée en **2016**.
 
 ---
 ### Evolution des besoins en calcul
@@ -387,9 +387,9 @@ Voici un exemple d'algorithme quantique qui permet de réaliser une recherche av
 
 ![](img/grover-algo.png)
 
-La première partie à gauche détermine la valeur à rechercher et la seconde, répétée √n fois, l'amplifie par un procédé appelé **amplification d'amplitude**.
-
-Ce circuit donne toujours le résultat de la recherche **00**.
+- Les deux portes H créent un **état superposé**.
+- La partie entre les portes S **inverse la valeur à rechercher** et est appelé l'Oracle.
+- La dernière partie est exécutée √n fois pour amplifier la valeur recherchée et atténuer les autres par un procédé appelé **amplification d'amplitude**.
 
 ---
 Situation fin 2017
@@ -455,7 +455,7 @@ On rencontre ce type de complexité exponentielle dans les types de problèmes s
 - **Optimisation** : on imagine bien que l'optimisation des livraisons d'Amazon dans une ville comme New York est un problème qui est en même temps extrêmement complexe et d'une grande importance.
 - **Chimie** : la modélisation des électrons dans les molécules, qui sont attirés par les noyaux et se repoussent entre eux devient vite très complexe lorsqu'on augmente le nombre de ces électrons.
 
-Ces problèmes essrntiels sont pourtant hors de portée des ordinateurs classiques.
+Ces problèmes essentiels sont pourtant hors de portée des ordinateurs classiques.
 
 ---
 ### Suprématie Quantique
