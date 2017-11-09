@@ -399,7 +399,7 @@ Situation fin 2017
 
 IBM travaille sur les ordinateurs quantiques depuis plus de 35 ans.
 
-- En mais 2016, IBM a dévoilé un **ordinateur quantique à 5 qubits**, accessible au grand public par internet.
+- En mai 2016, IBM a dévoilé un **ordinateur quantique à 5 qubits**, accessible au grand public par internet.
 - En mars 2017, IBM a ouvert une division commerciale, **IBM Q**, pour développer et vendre du calcul quantique par le cloud.
 - En mai 2017, IBM a annoncé deux nouveaux prototypes de processeurs quantiques, à **16 et 17 qubits**.
 
