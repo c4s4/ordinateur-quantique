@@ -11,7 +11,7 @@ Proposition BDXIO 2017
 
 On entend parfois parler d'ordinateur quantique. Mais qui en a déjà vu un ?
 
-Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication quantiques), je présenterai le qubit ainsi que les principaux algorithmes quantiques (Grover pour la recherche et Shor pour la décomposition de nombres premiers). Je finirai sur les implémentations actuelles, les difficultés de mise ne œuvre, les perspectives et les enjeux de ces ordinateur d'un nouveau type.
+Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication quantiques), je présenterai le qubit ainsi que les principaux algorithmes quantiques (Grover pour la recherche et Shor pour la décomposition de nombres premiers). Je finirai sur les implémentations actuelles, les difficultés de mise en œuvre, les perspectives et les enjeux de ces ordinateurs d'un nouveau type.
 
 ---
 Plan
@@ -20,7 +20,7 @@ Plan
 - Pourquoi l'ordinateur quantique ?
   - La loi de Moore
   - Limites de l'informatique classique
-  - Besoins croissant en puissance de calcul
+  - Besoins croissants en puissance de calcul
 - Principes de fonctionnement
   - Superposition quantique
   - Intrication quantique
@@ -62,7 +62,7 @@ Cependant, cette loi est **exponentielle**. Or nous savons tous que les lois exp
 En ce qui concerne les processeurs, les limites sont les suivantes :
 
 - La **finesse de la gravure**, et donc le nombre de transistors par centimètre carré, est limitée par la **diffraction** de la lumière.
-- L'**effet tunnel**, qui permet à un électron de passer une barrière à priori infranchissable, limite aussi la finesse des circuits.
+- L'**effet tunnel**, qui permet à un électron de passer une barrière à priori infranchissable en physique classique mais pas en physique quantique, limite aussi la finesse des circuits.
 - La **fréquence** est limitée par l'**émission de rayonnement** aux hautes fréquences ainsi que l'**émission de chaleur** par le processeur.
 
 Ces limites physiques conduisent au plafonnement des performances des processeurs, et la fin de la validité de la loi de Moore a été annoncée en **2016**.
@@ -141,7 +141,7 @@ Où *a* et *b* déterminent la **probabilité** d'observer la particule dans l'�
 ---
 ### Le coin du mathématicien
 
-Les vecteurs d'état de la physique quantique n'ont rien à voir avec les vecteurs de la géométrie. En effet, les bases de l'espace vectoriel sont des états mutuellement exclusifs : une particule ne peut être simultanément dans l'état *|u>* et *|d>*.
+Les vecteurs d'état de la physique quantique ne sont pas les vecteurs de la géométrie habituelle. Ils sont définis dans une base des états orthogonaux, ou mutuellement exclusifs. Dans le cas du spin, les vecteurs de base sont *|u>* et *|d>*.
 
 De plus, lorsqu'on écrit un état quantique sous la forme :
 
@@ -363,7 +363,7 @@ Nous mesurons bien (quasiment) autant de *|0>* que de *|1>*.
 ---
 ### Porte quantique multiple
 
-Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est la cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du second qubit si le premier est à *|1>* et ne fait rien sinon.
+Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est le cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du second qubit si le premier est à *|1>* et ne fait rien sinon.
 
 ![](img/partition-3.png)
 
