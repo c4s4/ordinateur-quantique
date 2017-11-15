@@ -5,6 +5,8 @@ Michel Casabianca
 
 casa@sweetohm.net
 
+Un grand merci à **Helena Sliwinska** pour sa relecture éclairée !
+
 ---
 Proposition BDXIO 2017
 ----------------------
