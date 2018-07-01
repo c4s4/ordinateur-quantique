@@ -1,3 +1,15 @@
+# Semantic Change Log (see http://github.com/c4s4/changelog)
+
+# - version: 1.1.0
+#   date:    2018-07-08
+#   summary: Second release
+#   notes:
+#   - "Talk RMLL, 2018-07-08 at 15:30, PLATANE A12."
+
+- version: 1.1.0-rc-1
+  date:    2018-07-01
+  summary: "Corrections et mises à jour mi-2018"
+
 - version: 1.0.0
   date:    2017-11-10
   summary: "Présentation BDXIO 2017"
