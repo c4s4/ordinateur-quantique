@@ -8,12 +8,12 @@ casa@sweetohm.net
 Un grand merci à **Helena Sliwinska** pour sa relecture éclairée !
 
 ---
-Proposition BDXIO 2017
-----------------------
+Proposition RMLL 2018
+---------------------
 
 On entend parfois parler d'ordinateur quantique. Mais qui en a déjà vu un ?
 
-Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication quantiques), je présenterai le qubit ainsi que les principaux algorithmes quantiques (Grover pour la recherche et Shor pour la décomposition de nombres premiers). Je finirai sur les implémentations actuelles, les difficultés de mise en œuvre, les perspectives et les enjeux de ces ordinateurs d'un nouveau type.
+Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication), je présenterai le Qubit ainsi que son utilisation dans des algorithmes, dont Grover pour la recherche. Je finirai par les implémentations actuelles, les difficultés de mise ne œuvre, les perspectives et les enjeux de ces ordinateur d'un nouveau type.
 
 ---
 Plan
