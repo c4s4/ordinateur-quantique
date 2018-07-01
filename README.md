@@ -64,7 +64,7 @@ Cependant, cette loi est **exponentielle**. Or nous savons tous que les lois exp
 En ce qui concerne les processeurs, les limites sont les suivantes :
 
 - La **finesse de la gravure**, et donc le nombre de transistors par centimètre carré, est limitée par la **diffraction** de la lumière.
-- L'**effet tunnel**, qui permet à un électron de passer une barrière à priori infranchissable en physique classique mais pas en physique quantique, limite aussi la finesse des circuits.
+- L'**effet tunnel**, qui permet à un électron de passer une barrière a priori infranchissable en physique classique mais pas en physique quantique, limite aussi la finesse des circuits.
 - La **fréquence** est limitée par l'**émission de rayonnement** aux hautes fréquences ainsi que l'**émission de chaleur** par le processeur.
 
 Ces limites physiques conduisent au plafonnement des performances des processeurs, et la fin de la validité de la loi de Moore a été annoncée en **2016**.
@@ -280,7 +280,7 @@ Pour obtenir des résultats ayant des applications pratiques, il est nécessaire
 
 Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins autant de qubits qu'il y a de bits** dans ce nombre. Donc en pratique plusieurs centaines, voire milliers.
 
-D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qbits des ordinateurs.
+D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qubits des ordinateurs.
 
 ---
 Algorithmes quantiques
@@ -394,8 +394,8 @@ Voici un exemple d'algorithme quantique qui permet de réaliser une recherche av
 - La dernière partie est exécutée √n fois pour amplifier la valeur recherchée et atténuer les autres par un procédé appelé **amplification d'amplitude**.
 
 ---
-Situation fin 2017
-------------------
+Situation mi-2018
+-----------------
 
 ### IBM
 
@@ -404,6 +404,7 @@ IBM travaille sur les ordinateurs quantiques depuis plus de 35 ans.
 - En mai 2016, IBM a dévoilé un **ordinateur quantique à 5 qubits**, accessible au grand public par internet.
 - En mars 2017, IBM a ouvert une division commerciale, **IBM Q**, pour développer et vendre du calcul quantique par le cloud.
 - En mai 2017, IBM a annoncé deux nouveaux prototypes de processeurs quantiques, à **16 et 17 qubits**.
+- En novembre 2017, IBM a fait fonctionner un ordinateur quantique de **50 qubits** pendant *90 µs*.
 
 IBM espère à terme développer un processeur quantique à **50 qubits**.
 
@@ -426,7 +427,7 @@ Les machines D-Wave sont cependant critiquées car elles utilisent un procédé 
 Google est un client de D-Wave, mais a aussi développé sa propre technologie de calcul quantique. Cette technologie est un **hybride** entre celle d'IBM et celle de D-Wave.
 
 - En juin 2017, Google a testé une machine à **20 qubits** basée sur sa propre technologie.
-- D'ici à la fin 2017, Google espère tester une machine à **49 qubits**.
+- En mars 2018, Google a présenté *Bristlecone*, un processeur quantique de **72 qubits**.
 
 Google **investit massivement** dans l'ordinateur quantique. Dans un article de mars 2017, soit le même mois où IBM annonçait *IBM Q*, des ingénieurs travaillant chez Google ont prédit que :
 
@@ -440,7 +441,7 @@ que tout ordinateur classique pour réaliser certaines tâches.
 
 Microsoft travaille sur les ordinateurs quantiques avec une initiative appelée **Station Q**, basée essentiellement sur une technologie appelée *topological quantum computing*.
 
-En décembre 2016, Intel a révélé qu'il travaille sur la réalisation de **puces quantiques sur silicium**.
+En décembre 2016, Intel a révélé qu'il travaille sur la réalisation de **puces quantiques sur silicium**. En janvier 2018, il a présenté au CES un calculateur de **49 qubits**.
 
 En juillet 2016, Alibaba, le géant du commerce en ligne Chinois, s'est associé avec l'académie des sciences Chinoise pour mettre sur pied un laboratoire de calcul quantique, le **Alibaba Quantum Computing Laboratory**.
 
@@ -504,5 +505,8 @@ En plus de l'interface graphique du *composer*, on peut aussi utiliser le langag
 Merci pour votre attention
 ==========================
 
-Des Questions ?
----------------
+### Merci pour votre attention ! 
+
+### Des Questions ?
+
+Slides disponibles à l'adresse <http://sweetohm.net/slides/ordinateur-quantique>.
