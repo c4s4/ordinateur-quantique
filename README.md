@@ -27,13 +27,13 @@ Plan
   - Superposition quantique
   - Intrication quantique
   - Les qubits et intérêt pour le calcul
-- Implémentations d'ordinateurs quantiques
-  - Ordinateur quantique IBM
-  - Limites de l'ordinateur quantique
 - Algorithmes quantiques
   - IBM quantum Experience
   - Portes quantiques
-- Situation fin 2017
+- Implémentations d'ordinateurs quantiques
+  - Ordinateur quantique IBM
+  - Limites de l'ordinateur quantique
+- Situation mi-2018
   - Situation actuelle
   - Perspectives
 
@@ -218,71 +218,6 @@ quantique à n qubits.
 Pour **n = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.624**, soit environ 1 million de millards...
 
 ---
-Implémentations d'ordinateurs quantiques
-----------------------------------------
-
-Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un **système macroscopique ayant des propriétés quantiques** pendant un temps suffisamment long.
-
-On utilise actuellement, entre autres, les procédés suivants :
-
-- Les **circuits supraconducteurs avec jonction Josephson** : technologie mise en œuvre par IBM depuis la fin des années 70 permettant d'envisager des circuits ayant une bonne résistance à la décohérence.
-
-- Les **ions piégés** sont constitués de particules chargées piégées par des champs magnétiques dans des espaces clos et y sont contrôlés par laser. Ils permettent de mettre en œuvre le plus grand nombre de qubits.
-
-Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en œuvre, et souvent à de **très basses températures** afin d'éviter les perturbations extérieures.
-
----
-### L'ordinateur quantique d'IBM
-
-Voici à quoi ressemble l'ordinateur quantique d'IBM :
-
-![](img/ordinateur-ibm.png)
-
----
-### Le processeur quantique d'IBM
-
-Le processeur quantique IBM à 16 qubits :
-
-![](img/processeur-ibm.png)
-
----
-### Mise en œuvre
-
-Au vu de la taille des installations nécessaires et de la complexité de mise en œuvre (installation cryogénique), on comprend que l'ordinateur quantique est confiné dans des **centres de calcul**.
-
-D'autre part, du fait de la taille réduite des données en entrée et en sortie, typiquement quelques bits, on peut envisager des **accès par le web**.
-
-Par conséquent, on ne peut s'attendre à un **usage grand public** de l'informatique quantique dans un futur proche, du moins sous la forme d'appareils possédés par des particuliers.
-
----
-### Limites de l'ordinateur quantique
-
-**Décohérence**
-
-La décohérence résulte de l'action de l'environnement sur un système qui **perd alors ses propriétés quantiques**. Pour pouvoir réaliser un ordinateur quantique, les qubits doivent avoir une durée de cohérence supérieure au temps de calcul.
-
-**Réduction du paquet d'onde**
-
-Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc **les qubits deviennent de simples bits** et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
-
-**Théorème de non clonage des qubits**
-
-La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
-
-Par conséquent, il est **impossible de copier des qubits**.
-
----
-### Limites de l'ordinateur quantique (suite)
-
-**Nombre de qubits**
-
-Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'**un grand nombre de qubits**.
-
-Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins autant de qubits qu'il y a de bits** dans ce nombre. Donc en pratique plusieurs centaines, voire milliers.
-
-D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qubits des ordinateurs.
-
----
 Algorithmes quantiques
 ----------------------
 
@@ -365,7 +300,7 @@ Nous mesurons bien (quasiment) autant de *|0>* que de *|1>*.
 ---
 ### Porte quantique multiple
 
-Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est le cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du second qubit si le premier est à *|1>* et ne fait rien sinon.
+Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est le cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du qubit du haut si celui du bas est à *|1>* et ne fait rien sinon.
 
 ![](img/partition-3.png)
 
@@ -392,6 +327,71 @@ Voici un exemple d'algorithme quantique qui permet de réaliser une recherche av
 - Les deux portes H créent un **état superposé**.
 - La partie entre les portes S **inverse la valeur à rechercher** et est appelé l'Oracle.
 - La dernière partie est exécutée √n fois pour amplifier la valeur recherchée et atténuer les autres par un procédé appelé **amplification d'amplitude**.
+
+---
+Implémentations d'ordinateurs quantiques
+----------------------------------------
+
+Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un **système macroscopique ayant des propriétés quantiques** pendant un temps suffisamment long.
+
+On utilise actuellement, entre autres, les procédés suivants :
+
+- Les **circuits supraconducteurs avec jonction Josephson** : technologie mise en œuvre par IBM depuis la fin des années 70 permettant d'envisager des circuits ayant une bonne résistance à la décohérence.
+
+- Les **ions piégés** sont constitués de particules chargées piégées par des champs magnétiques dans des espaces clos et y sont contrôlés par laser. Ils permettent de mettre en œuvre le plus grand nombre de qubits.
+
+Il existe un très grand nombre d'autres implémentations de qubits. Mais ce qu'il faut retenir, c'est que toutes sont délicates à mettre en œuvre, et souvent à de **très basses températures** afin d'éviter les perturbations extérieures.
+
+---
+### L'ordinateur quantique d'IBM
+
+Voici à quoi ressemble l'ordinateur quantique d'IBM :
+
+![](img/ordinateur-ibm.png)
+
+---
+### Le processeur quantique d'IBM
+
+Le processeur quantique IBM à 16 qubits :
+
+![](img/processeur-ibm.png)
+
+---
+### Mise en œuvre
+
+Au vu de la taille des installations nécessaires et de la complexité de mise en œuvre (installation cryogénique), on comprend que l'ordinateur quantique est confiné dans des **centres de calcul**.
+
+D'autre part, du fait de la taille réduite des données en entrée et en sortie, typiquement quelques bits, on peut envisager des **accès par le web**.
+
+Par conséquent, on ne peut s'attendre à un **usage grand public** de l'informatique quantique dans un futur proche, du moins sous la forme d'appareils possédés par des particuliers.
+
+---
+### Limites de l'ordinateur quantique
+
+**Décohérence**
+
+La décohérence résulte de l'action de l'environnement sur un système qui **perd alors ses propriétés quantiques**. Pour pouvoir réaliser un ordinateur quantique, les qubits doivent avoir une durée de cohérence supérieure au temps de calcul.
+
+**Réduction du paquet d'onde**
+
+Lorsqu'on lit le résultat du calcul, on réalise une mesure et donc **les qubits deviennent de simples bits** et par conséquent de simples *0* ou *1*. Les qubits ne le restent que le temps du calcul.
+
+**Théorème de non clonage des qubits**
+
+La copie est une opération classique en informatique. Lors d'une copie on doit lire l'état pour le recopier à l'identique ailleurs. Or en ce faisant, on réalise une mesure et par conséquent, les qubits redeviennent de simples bits.
+
+Par conséquent, il est **impossible de copier des qubits**.
+
+---
+### Limites de l'ordinateur quantique (suite)
+
+**Nombre de qubits**
+
+Pour obtenir des résultats ayant des applications pratiques, il est nécessaire de disposer d'**un grand nombre de qubits**.
+
+Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins autant de qubits qu'il y a de bits** dans ce nombre. Donc en pratique plusieurs centaines, voire milliers.
+
+D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qubits des ordinateurs.
 
 ---
 Situation mi-2018
@@ -505,8 +505,10 @@ En plus de l'interface graphique du *composer*, on peut aussi utiliser le langag
 Merci pour votre attention
 ==========================
 
-### Merci pour votre attention ! 
+## Des Questions ?
 
-### Des Questions ?
+### Slides disponibles à l'adresse <http://sweetohm.net/slides/ordinateur-quantique>.
 
-Slides disponibles à l'adresse <http://sweetohm.net/slides/ordinateur-quantique>.
+### <casa@sweetohm.net>
+
+### <http://sweetohm.net>
