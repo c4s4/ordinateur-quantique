@@ -6,6 +6,10 @@
 #   notes:
 #   - "Talk RMLL, 2018-07-08 at 15:30, PLATANE A12."
 
+- version: 1.1.0-rc-3
+  date:    2018-07-07
+  summary: "Réorganisation du plan"
+
 - version: 1.1.0-rc-2
   date:    2018-07-01
   summary: "Correction de la proposition RMLL 2018"
