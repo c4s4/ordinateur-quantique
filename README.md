@@ -1,23 +1,22 @@
-L'Ordinateur Quantique, Mythe ou Réalité ?
-==========================================
+# L'Ordinateur Quantique, Mythe ou Réalité ?
+
+![IBM Q System One ](img/ibm-q-system-one.png)
+
+---
+# L'Ordinateur Quantique, Mythe ou Réalité ?
 
 Michel Casabianca
 
 casa@sweetohm.net
 
-Un grand merci à **Helena Sliwinska** pour sa relecture éclairée !
-
----
-Proposition RMLL 2018
----------------------
-
 On entend parfois parler d'ordinateur quantique. Mais qui en a déjà vu un ?
 
 Après une brève présentation des principes physiques sur lesquels repose l'ordinateur quantique (superposition et intrication), je présenterai le Qubit ainsi que son utilisation dans des algorithmes, dont Grover pour la recherche. Je finirai par les implémentations actuelles, les difficultés de mise ne œuvre, les perspectives et les enjeux de ces ordinateur d'un nouveau type.
 
+Un grand merci à **Helena Sliwinska** pour sa relecture éclairée !
+
 ---
-Plan
-----
+## Plan
 
 - Pourquoi l'ordinateur quantique ?
   - La loi de Moore
@@ -38,8 +37,7 @@ Plan
   - Perspectives
 
 ---
-Pourquoi l'ordinateur Quantique ?
----------------------------------
+## Pourquoi l'ordinateur Quantique ?
 
 Nos ordinateurs classiques nous ont suffi jusqu'à maintenant...
 
@@ -113,8 +111,7 @@ L'idée est restée assez vague, jusqu'à ce que :
 L'intérêt pratique de ces deux algorithmes, pour la **cryptographie** et la **recherche de données**, a poussé à l'implémentation concrète d'ordinateurs quantiques. Et il se trouve que les gens qui s'intéressent à ces domaines, comme la **NSA** ou **Google**, ont des moyens.
 
 ---
-Principe de fonctionnement
---------------------------
+## Principe de fonctionnement
 
 Avant d'étudier le fonctionnement d'un ordinateur quantique, il nous faut *essayer* de comprendre deux principes de la physique quantique : **la superposition** et **l'intrication**.
 
@@ -218,8 +215,7 @@ quantique à n qubits.
 Pour **n = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.624**, soit environ 1 million de millards...
 
 ---
-Algorithmes quantiques
-----------------------
+## Algorithmes quantiques
 
 Les algorithmes quantiques sont composés de **portes quantiques** appliquées aux qubits pour réaliser des opérations sur ceux-ci.
 
@@ -394,8 +390,7 @@ Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins au
 D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qubits des ordinateurs.
 
 ---
-Situation mi-2018
------------------
+## Situation mi-2018
 
 ### IBM
 
@@ -448,8 +443,7 @@ En juillet 2016, Alibaba, le géant du commerce en ligne Chinois, s'est associé
 En juillet 2017, Atos annonce son **Atos Learning Machine**, un ordinateur classique capable de simuler 40 qubits. Il permet aux chercheurs et développeurs de travailler sur des algorithmes quantiques.
 
 ---
-Perspectives
-------------
+## Perspectives
 
 Il existe beaucoup de problèmes dont la **complexité est exponentielle**. Un exemple simple est le placement de convives autour d'une table : pour *3* convives, il y a *3 x 2 x 1 = 3! = 6* possibilités. Pour *10* convives, nous sommes à *10!*, soit plus de *3* millions !
 
@@ -481,8 +475,7 @@ Au delà de l'aspect marketing de cette course à la **suprématie quantique**, 
 Les sources s'accordent sur une révolution dans ces domaines dans les **5 années à venir**.
 
 ---
-Pour aller plus loin
---------------------
+## Pour aller plus loin
 
 Pour comprendre en profondeur le fonctionnement des ordinateurs quantiques, il faut commencer par se familiariser avec la physique quantique. Je conseille donc de lire l'ouvrage de *Leonard Susskind* **Le minimum théorique, Mécanique Quantique**.
 
@@ -502,8 +495,7 @@ L'inscription est gratuite et ouverte à tout le monde. Le site propose de la **
 En plus de l'interface graphique du *composer*, on peut aussi utiliser le langage de programmation **Qasm** ou bien une **API Python**.
 
 ---
-Merci pour votre attention
-==========================
+# Merci pour votre attention
 
 ## Des Questions ?
 
