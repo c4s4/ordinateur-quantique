@@ -4,5 +4,5 @@ extends: [slides, changelog]
 
 properties:
   TITLE:   "L'Ordinateur Quantique, Mythe ou Réalité ?"
-  # OPTIONS: '{ratio: "4:3"}'
-  OPTIONS: '{ratio: "16:9"}'
+  OPTIONS: '{ratio: "4:3"}'
+  #OPTIONS: '{ratio: "16:9"}'
