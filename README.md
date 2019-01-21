@@ -32,7 +32,7 @@ Un grand merci à **Helena Sliwinska** pour sa relecture éclairée !
 - Implémentations d'ordinateurs quantiques
   - Ordinateur quantique IBM
   - Limites de l'ordinateur quantique
-- Situation mi-2018
+- Situation début 2019
   - Situation actuelle
   - Perspectives
 
@@ -387,10 +387,10 @@ Pour obtenir des résultats ayant des applications pratiques, il est nécessaire
 
 Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins autant de qubits qu'il y a de bits** dans ce nombre. Donc en pratique plusieurs centaines, voire milliers.
 
-D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a inrétêt à augmenter le nombre de qubits des ordinateurs.
+D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a intérêt à augmenter le nombre de qubits des ordinateurs.
 
 ---
-## Situation mi-2018
+## Situation début 2019
 
 ### IBM
 
