@@ -84,7 +84,7 @@ Voici des estimations du nombre d'ordinateurs dans les datacenters des plus gran
 - Amazon : **450.000** (en mars 2012).
 - OVH : **140.000** (en mars 2013).
 
-Les besoins en calculs des grandes entreprise sont donc énormes et vont croissant. La consommation des datacenters représente **2 % de la consommation modiale d'électricité**.
+Les besoins en calculs des grandes entreprise sont donc énormes et vont croissant. La consommation des datacenters représente **2 % de la consommation mondiale d'électricité**.
 
 ```bash
 Les besoins croissants en puissance de calcul ainsi que les limites des
