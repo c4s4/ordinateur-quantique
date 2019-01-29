@@ -400,6 +400,7 @@ IBM travaille sur les ordinateurs quantiques depuis plus de 35 ans.
 - En mars 2017, IBM a ouvert une division commerciale, **IBM Q**, pour développer et vendre du calcul quantique par le cloud.
 - En mai 2017, IBM a annoncé deux nouveaux prototypes de processeurs quantiques, à **16 et 17 qubits**.
 - En novembre 2017, IBM a fait fonctionner un ordinateur quantique de **50 qubits** pendant *90 µs*.
+- En janvier 2019, IBM a présenté au CES son premier ordinateur quantique commercial, le **IBM Q System One**, comportant 20 qubits.
 
 IBM espère à terme développer un processeur quantique à **50 qubits**.
 
