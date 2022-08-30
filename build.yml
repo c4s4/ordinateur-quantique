@@ -1,6 +1,7 @@
 # NeON build file (http://github.com/c4s4/neon)
 
 extends: slides
+default: [clean, slides]
 
 properties:
   TITLE:   "L'Ordinateur Quantique, Mythe ou Réalité ?"
