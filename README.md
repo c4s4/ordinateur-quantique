@@ -262,16 +262,16 @@ Après inscription, on accède à une page d'accueil depuis laquelle on peut lan
 
 Sur cette page, nous trouvons :
 
-- Les lignes horizontales correspondant aux **5 qubits** dont nous disposons.
-- A droite, nous trouvons les **portes logiques** que nous plaçons par *drag & drop*.
+- Les lignes horizontales correspondant aux **4 qubits** dont nous disposons.
+- A gauche, nous trouvons les **portes logiques** que nous plaçons par *drag & drop*.
 
-Les **qubits** sont tous initialement à l'état *|0>*. Nous pouvons changer leur état avec la porte **X** qui inverse l'état d'un qubit.
+Les **qubits** sont tous initialement à l'état *|0>*. Nous pouvons changer leur état avec la porte **X** (représentée par un + dans un cercle) qui inverse l'état d'un qubit.
 
-De plus, il faut toujours **effectuer une mesure** à la fin de notre partition pour pouvoir l'exécuter.
+Une **mesure est effectuée** à la droite de la partition automatiquement. Nous voyons le résultat de cette mesure en bas à gauche de l'écran.
 
-Lorsque nous effectuons une mesure, nous obtenons le résultat sous forme d'un **bit classique**. Nous disposons ainsi de 5 qubits et 5 cbits, les bits classiques qui contiennent le résultat de notre calcul.
+Lorsque nous effectuons une mesure, nous obtenons le résultat sous forme d'un **bit classique**. Nous disposons ainsi de 4 qubits et 4 cbits, les bits classiques qui contiennent le résultat de notre calcul.
 
-Lorsque nous avons composé notre partition, nous pouvons l'exécuter sur un **simulateur** ou sur un **processeur quantique**.
+Lorsque nous composons notre partition, le résultat issu d'une **simulation** est affiché automatiquement. Pour effectuer le calcul sur un véritable **processeur quantique**, nous devons cliquer sur **Setup and run**.
 
 ---
 ### Exemple de partition
@@ -280,7 +280,7 @@ Par exemple, si nous voulons laisser le premier qubit à l'état *|0>* et faire 
 
 ![](img/partition-1.png)
 
-Après avoir cliqué sur **Simulate**, nous obtenons la page suivante :
+Nous obtenons alors le résultat suivant :
 
 ---
 ### Exemple de résultat
@@ -289,8 +289,8 @@ Après avoir cliqué sur **Simulate**, nous obtenons la page suivante :
 
 Ce résultat se présente sous la forme d'un histogramme où :
 
-- **00010** est l'état des 5 qubits.
-- **1.000** est la proportion de ce résultat.
+- **0010** est l'état des 4 qubits.
+- **100** est la probabilité de ce résultat en %.
 
 Dans la représentation de l'état après la mesure, le premier qubit est le plus à droite.
 
@@ -312,7 +312,7 @@ Nous mesurons bien (quasiment) autant de *|0>* que de *|1>*.
 ---
 ### Porte quantique multiple
 
-Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est le cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du qubit du haut si celui du bas est à *|1>* et ne fait rien sinon.
+Pour pouvoir réaliser des calculs intéressants, il nous faut disposer de portes capables de réaliser des opérations **conditionnelles**. C'est le cas de la porte **CNOT** (pour *controlled not*) qui inverse l'état du qubit du bas si celui du haut est à *|1>* et ne fait rien sinon.
 
 ![](img/partition-3.png)
 
@@ -341,8 +341,7 @@ Voici un exemple d'algorithme quantique qui permet de réaliser une recherche av
 - La dernière partie est exécutée √n fois pour amplifier la valeur recherchée et atténuer les autres par un procédé appelé **amplification d'amplitude**.
 
 ---
-Implémentations d'ordinateurs quantiques
-----------------------------------------
+## Implémentations d'ordinateurs quantiques
 
 Pour implémenter des qubits utilisables pour le calcul, il faut être capable de réaliser un **système macroscopique ayant des propriétés quantiques** pendant un temps suffisamment long.
 
