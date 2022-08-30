@@ -135,7 +135,7 @@ a.|u> + b.|d>
 Où *a* et *b* déterminent la **probabilité** d'observer la particule dans l'état *|u>* ou *|d>*.
 
 - Si la particule est nécessairement dans l'état *|u>*, alors on aura *a = 1* et *b = 0*.
-- Si la particule a autant de chances d'être dans chacun des états, alors *a = b = 1/√2*. 
+- Si la particule a autant de chances d'être dans chacun des états, alors *a = b = 1/√2*.
 
 ---
 ### Le coin du mathématicien
@@ -215,6 +215,22 @@ quantique à n qubits.
 Pour **n = 50**, on obtient une accélération d'un facteur **1.125.899.906.842.624**, soit environ 1 million de millards...
 
 ---
+On peut faire une analogie avec l'exploration d'un labyrinthe. L'ordinateur classique doit explorer tous les chemins l'un après l'autre :
+
+![](img/classical-computer-maze.gif)
+
+C'est comparable à l'algorithme de décomposition de grands nombre en nombres premiers : on doit essayer tous les nombres plus petits que la racine carrée, l'un après l'autre.
+
+---
+Alors qu'un ordinateur quantique explore tous les chemins simultanément :
+
+![](img/quantum-computer-maze.gif)
+
+L'algorithme quantique de décomposition des grands nombres explore toutes les possibilités simultanément et est bien plus rapide que l'algorithme classique.
+
+Bien sûr, cela n'est qu'une analogie bien loin de la réalité quantique !
+
+---
 ## Algorithmes quantiques
 
 Les algorithmes quantiques sont composés de **portes quantiques** appliquées aux qubits pour réaliser des opérations sur ceux-ci.
@@ -234,10 +250,10 @@ L'état d'un qubit étant **probabiliste**, le résultat d'un calcul quantique l
 Pour montrer un exemple de mise en œuvre d'un algorithme quantique, nous pouvons utiliser l'outil qu'IBM met à disposition en ligne à l'adresse :
 
 ```bash
-http://quantumexperience.ng.bluemix.net
+https://quantum-computing.ibm.com/
 ```
 
-Après inscription, on accède à une page, le *composer*, nous permettant d'éditer notre *partition* :
+Après inscription, on accède à une page d'accueil depuis laquelle on peut lancer le *composer*, nous permettant d'éditer notre *partition* :
 
 ![](img/ibm-composer.png)
 
