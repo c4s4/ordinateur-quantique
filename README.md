@@ -405,7 +405,7 @@ Par exemple, pour factoriser de grands nombres, il faut disposer d'**au moins au
 D'autre part, l'accélération quantique étant en **2ⁿ**, il est clair qu'on a intérêt à augmenter le nombre de qubits des ordinateurs.
 
 ---
-## Situation début 2019
+## Situation en 2022
 
 ### IBM
 
@@ -417,7 +417,17 @@ IBM travaille sur les ordinateurs quantiques depuis plus de 35 ans.
 - En novembre 2017, IBM a fait fonctionner un ordinateur quantique de **50 qubits** pendant *90 µs*.
 - En janvier 2019, IBM a présenté au CES son premier ordinateur quantique commercial, le **IBM Q System One**, comportant 20 qubits.
 
-IBM espère à terme développer un processeur quantique à **50 qubits**.
+[Vidéo de présentation de la roadmap IBM en 2022](https://www.youtube.com/watch?v=0ka20qanWzI)
+
+---
+**Roadmap IBM en 2022**
+
+![](img/ibm-roadmap.png)
+
+D'ici quelques années, IBM ambitionne de :
+
+- Produire des processeurs quantiques de plusieurs milliers de qubits
+- Les relier avec des connexions quantiques pour paralléliser les traitements
 
 ---
 ### D-Wave Systems
@@ -429,6 +439,7 @@ D-Wave est un entreprise Canadienne pionnière en informatique quantique.
 - En 2013, elle vend une machine à **512 qubits**, le D-Wave Two, à un laboratoire d'intelligence artificielle quantique mis en place par la *NASA*, *Google* et des universités Américaines.
 - En 2015, elle passe la barrière du **millier de qubits** avec son ordinateur quantique D-Wave 2X.
 - En 2017, elle vend une machine à **2000 qubits**, le D-Wave 2000Q, à une entreprise de sécurité informatique, *Temporal Defense Systems*.
+- En 2019, elle annonce son processeur Pegasus avec plus de **5000 qubits**
 
 Les machines D-Wave sont cependant critiquées car elles utilisent un procédé appelé **Quantum Annealing** qui est pour certains une impasse pour le calcul quantique. Cette technologie ne permet de résoudre que des **problèmes d'optimisation**.
 
@@ -440,17 +451,14 @@ Google est un client de D-Wave, mais a aussi développé sa propre technologie d
 - En juin 2017, Google a testé une machine à **20 qubits** basée sur sa propre technologie.
 - En mars 2018, Google a présenté *Bristlecone*, un processeur quantique de **72 qubits**.
 
-Google **investit massivement** dans l'ordinateur quantique. Dans un article de mars 2017, soit le même mois où IBM annonçait *IBM Q*, des ingénieurs travaillant chez Google ont prédit que :
+En 2019, Google a prétendu avoir atteint le **suprématie quantique** avec son processeur Sycamore. Cela consiste à résoudre un problème impossible a calculer avec un ordinateur classique, avec un ordinateur quantique en un temps raisonnable. Le processeur de Google a mis 200 secondes à résoudre un problème qui serait résolu en 10.000 ans avec un superordinateur classique.
 
-```bash
-Dans quelques années, les ordinateurs quantiques seront plus puissants
-que tout ordinateur classique pour réaliser certaines tâches.
-```
+Cela a été très débattu car il est impossible de prouver qu'il n'existe pas d'algorithme rapide pour résoudre un problème sur un ordinateur classique.
 
 ---
 ### Microsoft, Intel, Alibaba et Atos
 
-Microsoft travaille sur les ordinateurs quantiques avec une initiative appelée **Station Q**, basée essentiellement sur une technologie appelée *topological quantum computing*.
+Microsoft travaille sur les ordinateurs quantiques avec une initiative appelée **Station Q**, basée essentiellement sur une technologie appelée *topological quantum computing*. il propose aussi des services en ligne avec **Azure Quantum**.
 
 En décembre 2016, Intel a révélé qu'il travaille sur la réalisation de **puces quantiques sur silicium**. En janvier 2018, il a présenté au CES un calculateur de **49 qubits**.
 
@@ -503,7 +511,7 @@ Pour comprendre en profondeur le fonctionnement des ordinateurs quantiques, il f
 On pourra ensuite expérimenter avec l'ordinateur quantique d'IBM sur le site web :
 
 ```bash
-http://quantumexperience.ng.bluemix.net
+https://quantum-computing.ibm.com/
 ```
 
 L'inscription est gratuite et ouverte à tout le monde. Le site propose de la **documentation** en ligne, pour les débutants et les utilisateurs confirmés.
