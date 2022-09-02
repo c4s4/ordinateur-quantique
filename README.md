@@ -32,7 +32,7 @@ Un grand merci à **Helena Sliwinska** pour sa relecture éclairée !
 - Implémentations d'ordinateurs quantiques
   - Ordinateur quantique IBM
   - Limites de l'ordinateur quantique
-- Situation début 2019
+- Situation en 2022
   - Situation actuelle
   - Perspectives
 
